@@ -44,17 +44,31 @@ body {
   text-align: center;
 }
 
-.navbar-default {
+.navbar-default,
+.navbar-nav>li>.dropdown-menu {
 	background-color: #C4B9AB;
 	border-color: #C4B9AB;
 	border-radius: 0;
 }
 
 .navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus,
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:active,
+.dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
 	color: #fff;
 }
-	.navbar-default .navbar-nav>li>a:hover {
+	.navbar-default .navbar-nav>li>a:hover,
+	.dropdown-menu>li>a:hover,
+	.navbar-default .navbar-nav>.open>a, 
+	.navbar-default .navbar-nav>.open>a:focus, 
+	.navbar-default .navbar-nav>.open>a:hover {
 		background-color: rgba(255,255,255, 0.2);
 	}
 .row {
