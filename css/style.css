@@ -1,4 +1,99 @@
 /*CSS*/
+body {
+	font-family: 'Raleway', sans-serif;
+}
+.logo-tekst {
+	text-align: center
+}
+
+	.logo-tekst img {
+		width: 50px;
+	}
+
+.carousel {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	height: 450px;
+}
+.item img {
+	width: 100%;
+	height: 450px !important;
+}
+
+	.item:after {
+		content:'';
+	    top: 0;
+	    left: 0;
+	    z-index: 10;
+	    width: 100%;
+	    height: 100%;
+	    display: block;
+	    position: absolute;
+	    background: rgba(196, 185, 171, 0.5);
+	}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default {
+	background-color: #C4B9AB;
+	border-color: #C4B9AB;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+	.navbar-default .navbar-nav>li>a:hover {
+		background-color: rgba(255,255,255, 0.2);
+	}
 .row {
 	margin: 0;
+}
+
+
+
+
+
+.pocetna {
+	margin-top: 330px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.usluge {
+	padding: 0 40px;
+}
+
+	.usluge i {
+		display: block;
+		text-align: center;
+	}
+
+	.usluge h3 {
+		text-align: center;
+	}
+
+	.usluge p {
+		text-align: justify;
+		margin-top: 30px;
+	}
+
+
+.footer {
+	background-color: #C4B9AB;
+    color: #fff;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
 }
