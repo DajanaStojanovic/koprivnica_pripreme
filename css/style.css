@@ -84,21 +84,23 @@ body {
 	margin-left: 45px;
 	margin-right: 45px;
 }
-
-.usluge {
-	padding: 0 40px;
+.kontent {
+	background-color: #C4B9AB;
+	padding: 20px;
+	border-radius: 10px;
+	color: #fff;
 }
 
-	.usluge i {
+	.kontent i {
 		display: block;
 		text-align: center;
 	}
 
-	.usluge h3 {
+	.kontent h3 {
 		text-align: center;
 	}
 
-	.usluge p {
+	.kontent p {
 		text-align: justify;
 		margin-top: 30px;
 	}

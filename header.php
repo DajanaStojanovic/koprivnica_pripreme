@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic' rel='stylesheet' type='text/css'>
@@ -33,7 +34,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">NASLOVNICA</a></li>
+        <li><a href="index.php">NASLOVNICA</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">O KOPRIVNICI <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -45,7 +46,7 @@
         <li><a href="#">NADOLAZEĆI DOGAĐAJI</a></li>
         <li><a href="#">SMJEŠTAJ</a></li>
         <li><a href="#">USLUGE</a></li>
-        <li><a href="#">KONTAKT</a></li>
+        <li><a href="kontakt.php">KONTAKT</a></li>
       </ul>
 
 
