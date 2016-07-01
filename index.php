@@ -1,7 +1,7 @@
 <?php include_once "header.php"; ?>
 
 <div class="row pocetna">
-	<div class="col-md-4">
+	<div class="col-md-4 post">
 	<div class="kontent">
 		<i class="fa fa-bed" style="font-size:36px"></i>
 		<h3>Smještaj</h3>
@@ -9,7 +9,7 @@
 	</div>
 	</div>
 
-	<div class="col-md-4">
+	<div class="col-md-4 post">
 		<div class="kontent">
 		<i class="fa fa-users" style="font-size:36px"></i>
 		<h3>Usluge</h3>
@@ -17,7 +17,7 @@
 	</div>
 	</div>
 
-	<div class="col-md-4">
+	<div class="col-md-4 post">
 		<div class="kontent">
 		<i class="fa fa-spinner" style="font-size:36px"></i>
 		<h3>Nadolazeći događaji</h3>
