@@ -21,7 +21,7 @@ if(!isset($_SESSION["userData"])):?>
 			
 			  <div class="form-group"> 
 			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="submit" id="login" class="btn btn-default">Prijavi se</button>
+			      <button id="login" class="btn btn-default">Prijavi se</button>
 			    </div>
 			  </div>
 			</form>
@@ -44,11 +44,12 @@ $("#login").click(function(){
 				dataType: 'text'
 			}).done(function(rezultat) {
 				if(rezultat=="OK"){
-					location.reload();
+					alert(<?php echo $_SESSION["userData"]->sifra;?>//location.reload();
 				}else{
 					$("#error").html(rezultat);
 				}				
 			});
+	return false;
 });
 	
 </script>
