@@ -34,7 +34,7 @@
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-6">
 	<p>Ovdje nas možete kontaktirati</p>
-		<form class="form-horizontal" role="form">
+		<form class="form-horizontal" role="form" id="forma">
 			  <div class="form-group">
 			    <label class="control-label col-sm-2" for="ime">Ime:</label>
 			    <div class="col-sm-10"> 
@@ -86,7 +86,7 @@
 
 			  <div class="form-group"> 
 			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="submit" class="btn btn-default">Pošalji</button>
+			      <button type="submit" id="send" class="btn btn-default">Pošalji</button>
 			    </div>
 			  </div>
 			</form>
@@ -94,3 +94,27 @@
 </div>
 <!--kraj kontakt-->
 <?php include_once "footer.php"; ?>
+<script>
+$("#send").click(function(){
+var ime = $("#ime").val();
+var prezime = $("#prezime").val()
+var tel = $("#brojtelefona").val();
+var adresa = $("#adresa").val();
+var opis = $("#opis").val();
+var email = $("#email").val();
+	$.ajax({
+				type: 'POST',
+				url: 'kontakt.php',
+				data: "ime=" + ime + "&prezime=" + prezime + "&tel=" + tel + "&adresa=" + adresa + "&email=" + email + "&opis=" + opis,
+				dataType: 'text'
+			}).done(function(rezultat) {
+				if(rezultat=="OK"){
+					alert("Prijava problema uspješna!")
+				}else{
+					alert(rezultat);
+				}				
+			});
+	return false;
+});
+
+</script>

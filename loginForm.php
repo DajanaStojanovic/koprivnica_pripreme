@@ -21,7 +21,7 @@ if(!isset($_SESSION["userData"])):?>
 			
 			  <div class="form-group"> 
 			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="submit" class="btn btn-default">Prijavi se</button>
+			      <button type="submit" id="login" class="btn btn-default">Prijavi se</button>
 			    </div>
 			  </div>
 			</form>
@@ -33,6 +33,7 @@ if(!isset($_SESSION["userData"])):?>
 	<p> <?php echo $_SESSION["userData"]->korisnickoime;?> </p>
 <?php endif;?>
 <script>
+$("#login").click(function(){
 	var korisnickoime = $.trim($("#korisnickoime").val());
 	var lozinka = $.trim($("#lozinka").val());
 	$.ajax({
@@ -47,4 +48,6 @@ if(!isset($_SESSION["userData"])):?>
 					$("#error").html(rezultat);
 				}				
 			});
+});
+	
 </script>
