@@ -57,10 +57,10 @@ body {
 
 .navbar-default,
 .navbar-nav>li>.dropdown-menu {
-	background-color: #57BC90;
-	border-color: #57BC90;
+	background-color: transparent;
+	border-color: transparent;
 	border-radius: 5px;
-	width: 35%;
+	width: auto;
 	float: right;
 	position: fixed;
 	right: 0;
