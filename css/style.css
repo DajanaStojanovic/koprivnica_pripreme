@@ -8,6 +8,9 @@ body {
 	height: 590px;
 	background-size: 100%;
 }
+	.prijava_button img {
+		width: 30px;
+	}
 
 .prijava_button {
 	position: absolute;
@@ -15,7 +18,7 @@ body {
 	left: 10px;
 }
 	.prijava_button button {
-		background-color: #77C9D4;
+		background-color: transparent;
 		border: none;
 		border-radius: 5px;
 		padding: 10px;
@@ -111,7 +114,7 @@ body {
 
 /*------forme --------------*/
 .kontakt .kontakt_kontent {
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
@@ -143,8 +146,11 @@ body {
     height: 45px;
 }
 
-button[type=submit] {
-		background-color: #77C9D4;
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+		background: linear-gradient(to bottom, #015249 5%, #015249 100%);
+		background-color: #015249;
 		border: none;
 		border-radius: 5px;
 		padding: 10px;
@@ -175,7 +181,8 @@ button[type=submit] {
 	background-color: rgba(1,82,73,0.5);
 	color: #fff;
 	padding: 15px;
-	border-radius: 10px
+	border-radius: 10px;
+	min-height: 210px;
 }
 
 	.adresa_prijave {
@@ -187,3 +194,16 @@ button[type=submit] {
 		font-size: 20px;
 		text-align: justify;
 	}
+
+	.prijave_admin img {
+		width: 30px;
+	}
+		.prijave_admin .obrisi {
+			right: 25px;
+			position: absolute;
+		}
+
+		.prijave_admin .uredi {
+			right: 60px;
+			position: absolute;
+		}

@@ -24,7 +24,7 @@
 
 			
 			  <div class="form-group"> 
-			    <div class="col-sm-offset-3 col-sm-9">
+			    <div class="col-sm-12">
 			      <button id="login" class="btn btn-default">Prijavi se</button>
 			    </div>
 			  </div>

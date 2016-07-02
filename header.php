@@ -21,7 +21,7 @@ session_start();?>
 
 <?php if(!isset($_SESSION["userData"])):?>
 <div class="prijava_button">
-  <button data-toggle="modal" data-target="#myModal">Prijavi se </button>
+  <button data-toggle="modal" data-target="#myModal"><img src="images/login.png" alt="Login" /> </button>
 </div>
 <?php else:?>
 	<a href="odjava.php"><button class="prijava_button"> Odjava </button> </a>
