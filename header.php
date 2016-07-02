@@ -14,10 +14,19 @@
 </head>
 <body>
 
+<div class="header">
+  <div class="header_lijevo">
 
-<div class="logo-tekst">
-    <img src="images/logo.png" src="Logo" />
-    <h3>Koprivnica</h3>
+  </div>
+
+  <div class="header_srednji">
+  <img src="images/stakor.png" />
+  </div>
+
+  <div class="header_desno">
+
+  </div>
+
 </div>
 
 
@@ -35,18 +44,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.php">NASLOVNICA</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">O KOPRIVNICI <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Povijest i kultura</a></li>
-            <li><a href="#">Turizam</a></li>
-            <li><a href="#">Sport</a></li>
-          </ul>
-        </li>
-        <li><a href="#">NADOLAZEĆI DOGAĐAJI</a></li>
-        <li><a href="#">SMJEŠTAJ</a></li>
-        <li><a href="#">USLUGE</a></li>
-        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="#kontakt">PRIJAVI PROBLEM</a></li>
+        <li><a href="#">RIJEŠENI PROBLEMI</a></li>
       </ul>
 
 
