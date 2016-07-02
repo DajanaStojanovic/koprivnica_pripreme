@@ -1,6 +1,11 @@
 <?php include_once "header.php"; ?>
 <div class="row pocetna">
-
+	<div class="col-md-12 prijavi">
+	<div>
+		<h1>PROBLEMI SA ŠTAKORIMA</h1>
+		<p>Pozivaju se građani na prijavljivanje problema sa štakorima, jer će za svu štetu, kao i za eventualno oštećenje zdravlja snositi odgovornost svaki za sebe, a roditelji za djecu.</p>
+	</div>
+	</div>
 </div>
 <style>
 	html, body, #map{
@@ -80,13 +85,8 @@
 
 
 
-<!--google mapa-->
-<div class="googlemapa">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44210.43858368393!2d16.786181290969715!3d46.16762169639677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476627031a318147%3A0xbe043a049b25af09!2sKoprivnica!5e0!3m2!1shr!2shr!4v1467450420289" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-<!--kraj mape -->
 
-<?php include_once "prijava.php"; ?>
+
 
 <!-- 
 NEPOTREBNO 
@@ -164,5 +164,9 @@ var email = $("#email").val();
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOCim7sdyd7HCXCVDAKE3p5mvufO8xkDc&callback=initMap">
     </script>
+
+
+ 
+<?php include_once "prijava.php"; ?>
 <?php include_once "footer.php"; ?>
 

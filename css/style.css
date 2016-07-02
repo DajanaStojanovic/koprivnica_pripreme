@@ -91,6 +91,23 @@ body {
     padding-bottom: 15px;
 }
 
+/*-------pocetak tekst----------*/
+.prijavi {
+	text-align: center;
+	margin: 0 auto;
+}
+	.prijavi div {
+		width: 50%;
+		background-color: rgba(1,82,73,0.5);
+		margin: -250px auto 0;
+		padding: 15px;
+		border-radius: 10px;
+		color: #fff;
+	}
+	.prijavi p {
+		font-size: 17px;
+	}
+
 /*------forme --------------*/
 button[type=submit] {
 		background-color: #77C9D4;
