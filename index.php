@@ -21,7 +21,7 @@
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12 kontakt">
 	<div>
-	<p>Ovdje nas možete kontaktirati</p>
+	<p>Ovdje možete prijaviti problem</p>
 		<form class="form-horizontal" role="form" id="forma">
 			  <div class="form-group">
 			    <label class="control-label col-sm-3" for="ime">Ime:</label>
@@ -38,42 +38,42 @@
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="email">E-mail:</label>
-			    <div class="col-sm-10">
+			    <label class="control-label col-sm-3" for="email">E-mail:</label>
+			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="email" placeholder="E-mail">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="email">Broj telefona:</label>
-			    <div class="col-sm-10">
+			    <label class="control-label col-sm-3" for="email">Broj telefona:</label>
+			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="brojtelefona" placeholder="Broj telefona">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="grad">Grad:</label>
-			    <div class="col-sm-10"> 
+			    <label class="control-label col-sm-3" for="grad">Grad:</label>
+			    <div class="col-sm-9"> 
 			      <input type="text" class="form-control" id="grad" placeholder="Grad">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="adresa">Adresa:</label>
-			    <div class="col-sm-10"> 
+			    <label class="control-label col-sm-3" for="adresa">Adresa:</label>
+			    <div class="col-sm-9"> 
 			      <input type="text" class="form-control" id="adresa" placeholder="Adresa">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="poruka">Opis problema:</label>
-			    <div class="col-sm-10"> 
+			    <label class="control-label col-sm-3" for="poruka">Opis problema:</label>
+			    <div class="col-sm-9"> 
 			      <textarea type="text" class="form-control" id="opis" placeholder="Opis problema"></textarea>
 			    </div>
 			  </div>
 
 			  <div class="form-group"> 
-			    <div class="col-sm-offset-2 col-sm-10">
+			    <div class="col-sm-offset-3 col-sm-9">
 			      <button type="submit" id="send" class="btn btn-default">Pošalji</button>
 			    </div>
 			  </div>
