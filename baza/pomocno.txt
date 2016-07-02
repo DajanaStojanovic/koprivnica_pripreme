@@ -1,0 +1,4 @@
+SIPANJE BAZE
+
+LUKA:
+mysql -u root -p000000 --default_character_set=utf8 < D:\XAMPP\htdocs\koprivnica_pripreme\baza\koprivnica_stakori.sql
