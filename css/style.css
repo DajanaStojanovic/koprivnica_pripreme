@@ -28,10 +28,17 @@ body {
 		color: #fff;
 		background-color: #015249;
 		padding: 10px;
-		border-radius: 10px;
+		border-radius: 5px;
 		position:absolute;
 		top: 10px;
 		left: 10px;
+	}
+	.odjava_button:hover {
+		background: linear-gradient(to bottom, #4d857f 5%, #015249 100%);
+		background-color: #4d857f;
+		border: none;
+		padding: 10px;
+		color: #fff;
 	}
 .navbar .navbar-nav {
   display: inline-block;
@@ -102,6 +109,21 @@ body {
     text-align: center;
     padding-bottom: 15px;
 }
+.partneri img {
+	width: 80px;
+	margin: 10px;
+}
+.podaci {
+	text-align: left; 
+}
+.podaci p {
+	margin: 0;
+}
+.podaci a,
+.podaci a:focus, 
+.podaci a:hover {
+	color: #fff;
+}
 
 /*-------pocetak tekst----------*/
 .prijavi {
@@ -159,9 +181,7 @@ body {
 	.kontakt .btn-default {
 		margin-bottom: 10px;
 	}
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.btn-default {
 		background: linear-gradient(to bottom, #015249 5%, #015249 100%);
 		background-color: #015249;
 		border: none;
@@ -170,7 +190,15 @@ body {
 		color: #fff;
 }
 
-
+.btn-default:hover,
+.btn-default:focus {
+		background: linear-gradient(to bottom, #4d857f 5%, #015249 100%);
+		background-color: #4d857f;
+		border: none;
+		border-radius: 5px;
+		padding: 10px;
+		color: #fff;
+}
 
 .prikazi {
 	margin: 0 auto;
@@ -183,6 +211,10 @@ body {
 	margin-bottom: 10px;
 	border-radius: 10px;
 	background-color: #015249;
+}
+.prikazi:hover {
+	background-color: #4d857f;
+	background: linear-gradient(to bottom, #4d857f 5%, #015249 100%);
 }
 /*------modal------------*/
 .modal {
@@ -209,16 +241,19 @@ body {
 	color: #fff;
 	padding: 15px;
 	border-radius: 10px;
-	min-height: 210px;
+	min-height: 300px;
+	margin-bottom: 30px;
+	height: auto;
 }
 
 	.adresa_prijave {
-		font-size: 30px;
+		font-size: 25px;
 		text-align: center;
 	}
 
 	.opis_prijave {
 		font-size: 20px;
+		height: 100px;
 		text-align: justify;
 	}
 
@@ -228,34 +263,23 @@ body {
 		.prijave_admin .obrisi {
 			right: 25px;
 			position: absolute;
+			cursor: pointer;
+			bottom: 40px;
 		}
 
-		.prijave_admin .uredi {
-			right: 60px;
-			position: absolute;
-		}
-
-
-@media(max-width: 1336px){
-	.header {
-		height: 500px;
-	}
-} 
 
 @media(max-width: 1024px){
-	.header {
-		height: 381px;
-	}
 	.prijavi div {
 		width: 60%;
 		margin: -210px auto 0;
 	}
+	.adresa_prijave {
+		font-size: 20px;
+		height: 70px;
+	}
 }
 
 @media(max-width: 900px) {
-	.header {
-		height: 337px;
-	}
 	.prijavi div {
 		width: 75%;
 		margin: -160px auto 50px;
@@ -265,16 +289,7 @@ body {
 	}
 }
 
-@media(max-width: 800px){
-	.header {
-		height: 297px;
-	}
-}
-
 @media(max-width: 767px) {
-	.header {
-		height: 286px;
-	}
 	.navbar-default .navbar-toggle {
 		border-color: #fff;
 	}
@@ -299,15 +314,18 @@ body {
 }
 
 @media(max-width: 640px) {
-	.kontakt .kontakt_kontent,
+	.kontakt .kontakt_kontent {
+		width: 80%;
+	}
 	.prijavi div {
 		width: 80%;
+		margin: -100px auto 50px;
 	}
 }
 
 @media(max-width: 480px) {
 	.prijavi div {
-		margin: -180px auto 50px;
+		margin: -70px auto 50px;
 	}
 	.prijavi h1 {
 		font-size: 27px;
@@ -330,5 +348,11 @@ body {
 	.modal-open .modal,
 	.modal-dialog {
 		width: 95%;
+	}
+}
+
+@media(max-width: 360px) {
+	.prijavi div {
+		margin: -40px auto 50px;
 	}
 }

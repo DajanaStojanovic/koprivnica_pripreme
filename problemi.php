@@ -12,7 +12,7 @@ if(!isset($_SESSION["userData"])){
 	$popisPrijava = $prijave->fetchAll(PDO::FETCH_OBJ);
 	
 	foreach($popisPrijava as $p):?>
-	<div class="col-md-4 prijave_admin">
+	<div class="col-md-4 col-sm-6 prijave_admin">
 		<div>
 			<p class="adresa_prijave"><?php echo $p->adresa;?></p>
 			<p class="opis_prijave"><?php echo $p->opis;?></p>
