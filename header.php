@@ -1,3 +1,5 @@
+<?php
+session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,9 +19,13 @@
 <div class="header">
 </div>
 
+<?php if(!isset($_SESSION["userData"])):?>
 <div class="prijava_button">
-  <button tyle="button" data-toggle="modal" data-target="#myModal">Prijavi se </button>
+  <button data-toggle="modal" data-target="#myModal">Prijavi se </button>
 </div>
+<?php else:?>
+	<a href="odjava.php"><button class="prijava_button"> Odjava </button> </a>
+<?php endif;?>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">

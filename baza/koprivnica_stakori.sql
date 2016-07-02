@@ -43,7 +43,7 @@ CREATE TABLE `operater` (
 --
 
 INSERT INTO `operater` (`sifra`, `korisnicko_ime`, `lozinka`) VALUES
-(1, 'admin', 'c3284d0f94606de1fd2af172aba15bf3');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
 
 -- --------------------------------------------------------
 

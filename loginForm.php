@@ -1,6 +1,3 @@
-
-<?php
-if(!isset($_SESSION["userData"])):?>
   <div id="myModal" class="modal fade" role="dialog">
  	 <div class="modal-dialog">
 
@@ -27,13 +24,11 @@ if(!isset($_SESSION["userData"])):?>
 
 			
 			  <div class="form-group"> 
-
 			    <div class="col-sm-offset-3 col-sm-9">
 			      <button id="login" class="btn btn-default">Prijavi se</button>
 			    </div>
 			  </div>
 			</form>
-			<hr/>
 			<p id="error"></p>
 	</div>
 	
@@ -43,24 +38,21 @@ if(!isset($_SESSION["userData"])):?>
 			</div>
 		</div>
 	</div>
-<?php else:?>
-	<p> <?php echo $_SESSION["userData"]->korisnickoime;?> </p>
-	<a href="odjava.php"> Odjava </a>
-<?php endif;?>
 <script>
 $("#login").click(function(){
 	var korisnickoime = $.trim($("#korisnickoime").val());
 	var lozinka = $.trim($("#lozinka").val());
 	$.ajax({
 				type: 'POST',
-				url: '<?php echo $put;?>login.php',
-				data: "korisnickoime=" + korisnickoime + "&lozinka" + lozinka,
+				url: 'login.php',
+				data: "korisnickoime=" + korisnickoime + "&lozinka=" + lozinka,
 				dataType: 'text'
 			}).done(function(rezultat) {
 				if(rezultat=="OK"){
-					alert(<?php echo $_SESSION["userData"]->sifra;?>//location.reload();
+					location.reload();
 				}else{
 					$("#error").html(rezultat);
+					return false;
 				}				
 			});
 	return false;

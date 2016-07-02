@@ -14,9 +14,6 @@
 	}
 </style>
 
-
-
-
 <!--Kontakt forma -->
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12 kontakt">
@@ -82,17 +79,6 @@
 	</div>
 </div>
 <!--kraj kontakt-->
-
-<<<<<<< HEAD
-<?php include_once "prijava.php"; ?>
-=======
-
-
-
-
-
-
->>>>>>> origin/master
 
 <!-- 
 NEPOTREBNO 
