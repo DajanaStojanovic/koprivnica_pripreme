@@ -275,4 +275,60 @@ body {
 	.header {
 		height: 286px;
 	}
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+	.navbar .navbar-collapse {
+		border: none;
+		background-color: #015249;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.prijavi h1 {
+		font-size: 30px;
+	}
+	.prijavi p {
+		font-size: 15px;
+	}
+}
+
+@media(max-width: 640px) {
+	.kontakt .kontakt_kontent,
+	.prijavi div {
+		width: 80%;
+	}
+}
+
+@media(max-width: 480px) {
+	.prijavi div {
+		margin: -180px auto 50px;
+	}
+	.prijavi h1 {
+		font-size: 27px;
+	}
+}
+
+@media(max-width: 414px) {
+	.kontakt .kontakt_kontent,
+	.prijavi div {
+		width: 95%;
+	}
+	.prijavi p,
+	.kontakt_kontent input, .kontakt_kontent textarea,
+	.prikazi {
+		font-size: 13px;
+	}
+	.prijavi h2 {
+		font-size: 25px;
+	}
+	.modal-open .modal,
+	.modal-dialog {
+		width: 95%;
+	}
 }

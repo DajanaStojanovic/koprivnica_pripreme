@@ -192,6 +192,6 @@ $("#send").click(function(){
 
 
 
-<?php include_once "loginForm.php"; ?>
+
 <?php include_once "footer.php"; ?>
 

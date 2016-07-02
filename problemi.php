@@ -26,7 +26,6 @@ if(!isset($_SESSION["userData"])){
 	<?php endforeach;?>
 
 </div>
-<?php include_once "loginForm.php"; ?>
 <?php include_once "footer.php"; ?>
 <script>
 	$(".obrisi").click(function(){
