@@ -29,6 +29,9 @@
 
 </div>
 
+<div class="prijava_button">
+  <button>Prijavi se </button>
+</div>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
