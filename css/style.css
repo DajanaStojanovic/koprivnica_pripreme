@@ -108,7 +108,18 @@ body {
 		font-size: 17px;
 	}
 
+
 /*------forme --------------*/
+.kontakt .kontakt_kontent {
+	width: 50%;
+	margin: 0 auto;
+}
+	.kontakt h2 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
 button[type=submit] {
 		background-color: #77C9D4;
 		border: none;
@@ -135,3 +146,21 @@ button[type=submit] {
 .modal-dialog {
 	width: 400px;
 }
+
+/*-----problemi-----*/
+.prijave_admin div {
+	background-color: rgba(1,82,73,0.5);
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px
+}
+
+	.adresa_prijave {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.opis_prijave {
+		font-size: 20px;
+		text-align: justify;
+	}
