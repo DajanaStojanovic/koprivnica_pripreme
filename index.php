@@ -1,6 +1,11 @@
 <?php include_once "header.php"; ?>
 <div class="row pocetna">
-
+	<div class="col-md-12 prijavi">
+	<div>
+		<h1>PROBLEMI SA ŠTAKORIMA</h1>
+		<p>Pozivaju se građani na prijavljivanje problema sa štakorima, jer će za svu štetu, kao i za eventualno oštećenje zdravlja snositi odgovornost svaki za sebe, a roditelji za djecu.</p>
+	</div>
+	</div>
 </div>
 <style>
 	html, body, #map{
@@ -76,7 +81,16 @@
 </div>
 <!--kraj kontakt-->
 
+<<<<<<< HEAD
 <?php include_once "prijava.php"; ?>
+=======
+
+
+
+
+
+
+>>>>>>> origin/master
 
 <!-- 
 NEPOTREBNO 
@@ -154,5 +168,9 @@ var email = $("#email").val();
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOCim7sdyd7HCXCVDAKE3p5mvufO8xkDc&callback=initMap">
     </script>
+
+
+ 
+<?php include_once "prijava.php"; ?>
 <?php include_once "footer.php"; ?>
 
