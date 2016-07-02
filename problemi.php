@@ -18,7 +18,9 @@ if(!isset($_SESSION["userData"])){
 			<p class="opis_prijave"><?php echo $p->opis;?></p>
 			<hr/>
 			<small><?php echo $p->ime . " " . $p->prezime . ", Tel: " . $p->broj_telefona;?></small> 
-			<img src="images/delete.png" alt="Obriši" title="Obriši" class="obrisi" id="<?php echo $p->sifra;?>" />
+			
+			<img <?php if($_SESSION["userData"]->vrsta==1):?>src="images/delete.png"<?php else:?> src="images/done.png" <?php endif;?> alt="Obriši" title="Obriši" class="obrisi" id="<?php echo $p->sifra;?>" />
+
 		</div>
 	</div>
 	<?php endforeach;?>
