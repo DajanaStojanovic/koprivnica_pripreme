@@ -113,12 +113,35 @@ body {
 .kontakt .kontakt_kontent {
 	width: 50%;
 	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 	.kontakt h2 {
 		text-align: center;
 		padding-bottom: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 100;
+		padding: 20px;
+		background-color: #4D4D4D;
 	}
 
+.kontakt_kontent input,
+.kontakt_kontent textarea {
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font-size: 16px;
+    height: 45px;
+}
 
 button[type=submit] {
 		background-color: #77C9D4;
