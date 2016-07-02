@@ -34,19 +34,6 @@ NEPOTREBNO
 
 
 
-<!-- 
-NEPOTREBNO 
-    <div id="floating-panel">
-      <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Geocode">
-    </div>
--->
-
-	
-	<div style="width: 75%; height: 75%;">
-		<div id="map"></div>
-	</div>
-
 <!--Kontakt forma -->
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12 kontakt">
