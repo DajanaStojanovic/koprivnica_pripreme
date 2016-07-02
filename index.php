@@ -81,7 +81,7 @@
 </div>
 <!--kraj mape -->
 
-
+<?php include_once "prijava.php"; ?>
 
 <script>
 $("#send").click(function(){

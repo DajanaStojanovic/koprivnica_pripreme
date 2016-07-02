@@ -15,22 +15,10 @@
 <body>
 
 <div class="header">
-  <div class="header_lijevo">
-
-  </div>
-
-  <div class="header_srednji">
-  <img src="images/stakor.png" />
-  </div>
-
-  <div class="header_desno">
-
-  </div>
-
 </div>
 
 <div class="prijava_button">
-  <button>Prijavi se </button>
+  <button tyle="button" data-toggle="modal" data-target="#myModal">Prijavi se </button>
 </div>
 
 <nav class="navbar navbar-default">

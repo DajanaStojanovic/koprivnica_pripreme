@@ -4,34 +4,10 @@ body {
 }
 .header {
 	display: -webkit-box;
+	background: url('../images/background.png') no-repeat center;
+	height: 590px;
+	background-size: 100%;
 }
-
-	.header_lijevo {
-		-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 40%);
-	    clip-path: polygon(50% 0, 0 0, 0 100%, 100% 40%);
-	    background-color: #57BC90;
-	    width: 50%;
-	    height: 400px;
-	}
-	.header_srednji {
-    -webkit-clip-path: polygon(100% 0, 100% 0, 50% 40%, 0 0);
-    clip-path: polygon(100% 0, 100% 0, 50% 40%, 0 0);
-    width: 30%;
-    margin-left: -15%;
-    margin-right: -15%;
-    background-color: #015249;
-	}
-		.header_srednji img {
-			margin: 0 auto;
-			display: block;
-		}
-	.header_desno {
-    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 40%);
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 40%);
-    background-color: #77C9D4;
-    width: 50%;
-    height: 400px;
-	}
 
 .prijava_button {
 	position: absolute;
@@ -62,7 +38,7 @@ body {
 	border-radius: 5px;
 	width: auto;
 	float: right;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 0;
 	z-index: 999;
@@ -94,31 +70,12 @@ body {
 
 
 
-
-
-.pocetna {
-	margin-top: 100px;
-}
 .kontent {
 	background-color: #C4B9AB;
 	padding: 20px;
 	border-radius: 10px;
 	color: #fff;
 }
-
-	.kontent i {
-		display: block;
-		text-align: center;
-	}
-
-	.kontent h3 {
-		text-align: center;
-	}
-
-	.kontent p {
-		text-align: justify;
-		margin-top: 30px;
-	}
 
 
 .googlemapa iframe {
@@ -141,4 +98,23 @@ button[type=submit] {
 		border-radius: 5px;
 		padding: 10px;
 		color: #fff;
+}
+
+/*------modal------------*/
+.modal {
+	top:40px;
+	left: 10px;
+	right: initial;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: transparent !important;
+}
+.modal-dialog {
+	width: 400px;
 }
