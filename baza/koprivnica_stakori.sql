@@ -19,7 +19,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `koprivnica_stakori`
 --
-
+drop database if exists koprivnica_stakori;
+create database koprivnica_stakori character set utf8 collate utf8_general_ci;
+use koprivnica_stakori;
 -- --------------------------------------------------------
 
 --
