@@ -12,7 +12,7 @@ $prijava->bindParam(":broj_telefona", $_POST["tel"]);
 $prijava->bindParam(":opis", $_POST["opis"]);
 $prijava->execute();
 
-
+/*
 $to = "deratizerskafirma@email.com";
 $subject = "Posao " . date("d.m.Y.");
 $message = "
@@ -35,5 +35,5 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From: Koprivnica Deratizacija <kpd@example.com>' . "\r\n";
 
 // Mail it
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers);*/
 echo "OK";
