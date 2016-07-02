@@ -31,6 +31,7 @@ if(!isset($_SESSION["userData"])):?>
 </div>
 <?php else:?>
 	<p> <?php echo $_SESSION["userData"]->korisnickoime;?> </p>
+	<a href="odjava.php"> Odjava </a>
 <?php endif;?>
 <script>
 $("#login").click(function(){
