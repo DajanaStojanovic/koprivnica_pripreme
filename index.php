@@ -17,11 +17,26 @@
 
 
 
+
+
+<!-- 
+NEPOTREBNO 
+    <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+-->
+
+	
+	<div style="width: 75%; height: 75%;">
+		<div id="map"></div>
+	</div>
+
 <!--Kontakt forma -->
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12 kontakt">
-	<div>
-	<p>Ovdje možete prijaviti problem</p>
+	<div class="kontakt_kontent">
+	<h2>Ovdje možete prijaviti problem</h2>
 		<form class="form-horizontal" role="form" id="forma">
 			  <div class="form-group">
 			    <label class="control-label col-sm-3" for="ime">Ime:</label>
@@ -82,21 +97,6 @@
 	</div>
 </div>
 <!--kraj kontakt-->
-
-
-
-<!-- 
-NEPOTREBNO 
-    <div id="floating-panel">
-      <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Geocode">
-    </div>
--->
-
-	
-	<div style="width: 75%; height: 75%;">
-		<div id="map"></div>
-	</div>
 
 
 <script>
