@@ -1,3 +1,6 @@
+
+<?php
+if(!isset($_SESSION["userData"])):?>
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12">
 		<form class="form-horizontal" role="form">
@@ -22,5 +25,26 @@
 			    </div>
 			  </div>
 			</form>
+			<hr/>
+			<p id="error"></p>
 	</div>
 </div>
+<?php else:?>
+	<p> <?php echo $_SESSION["userData"]->korisnickoime;?> </p>
+<?php endif;?>
+<script>
+	var korisnickoime = $.trim($("#korisnickoime").val());
+	var lozinka = $.trim($("#lozinka").val());
+	$.ajax({
+				type: 'POST',
+				url: '<?php echo $put;?>login.php',
+				data: "korisnickoime=" + korisnickoime + "&lozinka" + lozinka,
+				dataType: 'text'
+			}).done(function(rezultat) {
+				if(rezultat=="OK"){
+					location.reload();
+				}else{
+					$("#error").html(rezultat);
+				}				
+			});
+</script>
