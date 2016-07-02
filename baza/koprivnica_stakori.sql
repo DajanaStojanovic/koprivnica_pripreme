@@ -7,6 +7,10 @@
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
+drop database if exists koprivnica_stakori;
+create database koprivnica_stakori character set utf8 collate utf8_general_ci;
+use koprivnica_stakori;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
