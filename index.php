@@ -19,19 +19,20 @@
 
 <!--Kontakt forma -->
 <div class="row pocetna" id="kontakt">
-	<div class="col-md-6">
+	<div class="col-md-12 kontakt">
+	<div>
 	<p>Ovdje nas možete kontaktirati</p>
 		<form class="form-horizontal" role="form" id="forma">
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="ime">Ime:</label>
-			    <div class="col-sm-10"> 
+			    <label class="control-label col-sm-3" for="ime">Ime:</label>
+			    <div class="col-sm-9"> 
 			      <input type="text" class="form-control" id="ime" placeholder="Vaše ime">
 			    </div>
 			  </div>
 
 			 <div class="form-group">
-			    <label class="control-label col-sm-2" for="prezime">Prezime:</label>
-			    <div class="col-sm-10">
+			    <label class="control-label col-sm-3" for="prezime">Prezime:</label>
+			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="prezime" placeholder="Vaše prezime">
 			    </div>
 			  </div>
@@ -77,6 +78,7 @@
 			    </div>
 			  </div>
 			</form>
+		</div>
 	</div>
 </div>
 <!--kraj kontakt-->
@@ -166,7 +168,7 @@ var email = $("#email").val();
     </script>
 
 
- 
-<?php include_once "prijava.php"; ?>
+
+<?php include_once "loginForm.php"; ?>
 <?php include_once "footer.php"; ?>
 
