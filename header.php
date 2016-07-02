@@ -46,7 +46,7 @@
         <li><a href="#">NADOLAZEĆI DOGAĐAJI</a></li>
         <li><a href="#">SMJEŠTAJ</a></li>
         <li><a href="#">USLUGE</a></li>
-        <li><a href="kontakt.php">KONTAKT</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
       </ul>
 
 
