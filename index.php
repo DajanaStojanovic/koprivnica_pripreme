@@ -83,16 +83,7 @@
 </div>
 <!--kraj kontakt-->
 
-<<<<<<< HEAD
-<?php include_once "prijava.php"; ?>
-=======
 
-
-
-
-
-
->>>>>>> origin/master
 
 <!-- 
 NEPOTREBNO 
