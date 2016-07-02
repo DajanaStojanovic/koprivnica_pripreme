@@ -2,11 +2,9 @@
 body {
 	font-family: 'Poppins', sans-serif;
 }
-.header {
-	display: -webkit-box;
-	background: url('../images/background.png') no-repeat center;
-	height: 590px;
-	background-size: 100%;
+.header img {
+	width: 100%;
+	height: auto;
 }
 	.prijava_button img {
 		width: 30px;

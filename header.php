@@ -17,6 +17,7 @@ session_start();?>
 <body>
 
 <div class="header">
+  <img src="images/background.png" />
 </div>
 
 <?php if(!isset($_SESSION["userData"])):?>
