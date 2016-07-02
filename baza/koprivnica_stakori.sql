@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2016 at 10:00 AM
+-- Generation Time: Jul 02, 2016 at 10:22 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -19,9 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `koprivnica_stakori`
 --
-drop database if exists koprivnica_stakori;
-create database koprivnica_stakori character set utf8 collate utf8_general_ci;
-use koprivnica_stakori;
+
 -- --------------------------------------------------------
 
 --
@@ -39,7 +37,7 @@ CREATE TABLE `operater` (
 --
 
 INSERT INTO `operater` (`sifra`, `korisnicko_ime`, `lozinka`) VALUES
-(1, 'admin', 'admin');
+(1, 'admin', 'c3284d0f94606de1fd2af172aba15bf3');
 
 -- --------------------------------------------------------
 
