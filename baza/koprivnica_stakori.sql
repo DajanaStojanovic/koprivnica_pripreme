@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2016 at 01:08 PM
+-- Generation Time: Jul 02, 2016 at 03:01 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -33,15 +33,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `operater` (
   `sifra` int(11) NOT NULL,
   `korisnicko_ime` varchar(250) NOT NULL,
-  `lozinka` char(32) NOT NULL
+  `lozinka` char(32) NOT NULL,
+  `vrsta` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `operater`
 --
 
-INSERT INTO `operater` (`sifra`, `korisnicko_ime`, `lozinka`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `operater` (`sifra`, `korisnicko_ime`, `lozinka`, `vrsta`) VALUES
+(1, 'admin', 'c3284d0f94606de1fd2af172aba15bf3', 1),
+(2, 'Sanitacija', '123e11e42d9bf0d170f9bfb7dcd5c25f', 0);
 
 -- --------------------------------------------------------
 
@@ -314,7 +316,7 @@ ALTER TABLE `ulice`
 -- AUTO_INCREMENT for table `operater`
 --
 ALTER TABLE `operater`
-  MODIFY `sifra` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `sifra` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `prijava`
 --
