@@ -14,8 +14,6 @@
 	}
 </style>
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -34,7 +32,21 @@ NEPOTREBNO
 		<div id="map"></div>
 	</div>
 
->>>>>>> origin/master
+
+
+<!-- 
+NEPOTREBNO 
+    <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+-->
+
+	
+	<div style="width: 75%; height: 75%;">
+		<div id="map"></div>
+	</div>
+
 <!--Kontakt forma -->
 <div class="row pocetna" id="kontakt">
 	<div class="col-md-12 kontakt">
@@ -77,7 +89,14 @@ NEPOTREBNO
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="adresa">Adresa:</label>
+			    <label class="control-label col-sm-3" for="adresa">Ulica:</label>
+			    <div class="col-sm-9"> 
+			      <input type="text" class="form-control" id="adresa" placeholder="Adresa">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label class="control-label col-sm-3" for="adresa">Kućni broj:</label>
 			    <div class="col-sm-9"> 
 			      <input type="text" class="form-control" id="adresa" placeholder="Adresa">
 			    </div>
@@ -100,23 +119,6 @@ NEPOTREBNO
 	</div>
 </div>
 <!--kraj kontakt-->
-
-<<<<<<< HEAD
-<!-- 
-NEPOTREBNO 
-    <div id="floating-panel">
-      <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Geocode">
-    </div>
--->
-
-	
-	<div style="width: 75%; height: 75%;">
-		<div id="map"></div>
-	</div>
-
-=======
->>>>>>> origin/master
 
 <script>
 //GOOGLE MAPS
