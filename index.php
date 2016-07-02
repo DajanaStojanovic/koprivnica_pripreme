@@ -34,8 +34,9 @@ NEPOTREBNO
 	
 	<div style="width: 75%; height: 75%;">
 		<div id="map"></div>
+		
 	</div>
-
+<button id="prikazi"> Prikaži problematična područja </button>
 
 
 <!--Kontakt forma -->
@@ -115,41 +116,44 @@ NEPOTREBNO
 
 <script>
 //GOOGLE MAPS
-function initMap() {
+	function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: {lat: 46.164114, lng: 16.830127}
         });
         var geocoder = new google.maps.Geocoder();
 
-        /*
-		NEPOTREBNO
-		document.getElementById('submit').addEventListener('click', function() {
-          geocodeAddress(geocoder, map);
-        });
-		*/
+		$("#prikazi").click(function(){
+			geocodeAddress(geocoder, map);
+			return false;
+		});
+          
+
       }
 
       function geocodeAddress(geocoder, resultsMap) {
 		  <?php 
 		  $prijave = $veza->prepare("select adresa from prijava order by datum_prijave limit 10");
 		  $prijave->execute();
-		  $popisPrijava = $prijave->fetchColumn();
+		  $popisPrijava = $prijave->fetchAll(PDO::FETCH_OBJ);
 		  ?>
-		var address = "<?php echo $popisPrijava;?>";
-			geocoder.geocode({'address': address}, function(results, status) {
-          if (status === google.maps.GeocoderStatus.OK) {
-            resultsMap.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-              map: resultsMap,
-              position: results[0].geometry.location
-            });
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
-        });
+		<?php foreach($popisPrijava as $p){?>
+			var address = "<?php echo $p->adresa;?>";
+				geocoder.geocode({'address': address}, function(results, status) {
+			  if (status === google.maps.GeocoderStatus.OK) {
+				resultsMap.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+				  map: resultsMap,
+				  position: results[0].geometry.location
+				});
+			  } else {
+				alert('Geocode was not successful for the following reason: ' + status);
+			  }
+			});
+		<?php };?>
       }
 	  
+
 	  
 //KONTAKT FORMA
 $("#send").click(function(){
