@@ -97,8 +97,6 @@ body {
 
 
 .pocetna {
-	margin-left: 45px;
-	margin-right: 45px;
 	margin-top: 100px;
 }
 .kontent {
@@ -134,4 +132,13 @@ body {
     padding-top: 15px;
     text-align: center;
     padding-bottom: 15px;
+}
+
+/*------forme --------------*/
+button[type=submit] {
+		background-color: #77C9D4;
+		border: none;
+		border-radius: 5px;
+		padding: 10px;
+		color: #fff;
 }
