@@ -50,9 +50,16 @@
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="kontakt">Kontakt:</label>
+			    <label class="control-label col-sm-2" for="email">E-mail:</label>
 			    <div class="col-sm-10">
-			      <input type="kontakt" class="form-control" id="kontakt" placeholder="Kontakt">
+			      <input type="email" class="form-control" id="email" placeholder="E-mail">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="email">Broj telefona:</label>
+			    <div class="col-sm-10">
+			      <input type="brojtelefona" class="form-control" id="brojtelefona" placeholder="Broj telefona">
 			    </div>
 			  </div>
 
