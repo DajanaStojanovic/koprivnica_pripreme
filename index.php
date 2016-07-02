@@ -125,6 +125,7 @@ NEPOTREBNO
 
 		$("#prikazi").click(function(){
 			geocodeAddress(geocoder, map);
+			$("#prikazi").hide();
 			return false;
 		});
           
