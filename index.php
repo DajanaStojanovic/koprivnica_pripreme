@@ -36,16 +36,23 @@
 	<p>Ovdje nas možete kontaktirati</p>
 		<form class="form-horizontal" role="form">
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="email">Email:</label>
+			    <label class="control-label col-sm-2" for="ime">Ime:</label>
+			    <div class="col-sm-10"> 
+			      <input type="ime" class="form-control" id="ime" placeholder="Vaše ime">
+			    </div>
+			  </div>
+
+			 <div class="form-group">
+			    <label class="control-label col-sm-2" for="prezime">Prezime:</label>
 			    <div class="col-sm-10">
-			      <input type="email" class="form-control" id="email" placeholder="Vaš email">
+			      <input type="prezime" class="form-control" id="prezime" placeholder="Vaše prezime">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-2" for="ime">Ime:</label>
-			    <div class="col-sm-10"> 
-			      <input type="ime" class="form-control" id="ime" placeholder="Vaše ime">
+			    <label class="control-label col-sm-2" for="kontakt">Kontakt:</label>
+			    <div class="col-sm-10">
+			      <input type="kontakt" class="form-control" id="kontakt" placeholder="Kontakt">
 			    </div>
 			  </div>
 
