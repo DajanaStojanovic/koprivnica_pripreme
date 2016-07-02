@@ -32,50 +32,50 @@ NEPOTREBNO
 -->
 
 	
-	<div style="width: 75%; height: 75%;">
+	<div style="width: 75%; height: 75%;" id="rijeseni_problemi">
 		<div id="map"></div>
 		
 	</div>
-<button id="prikazi"> Prikaži problematična područja </button>
+<button id="prikazi" class="prikazi"> Prikaži problematična područja </button>
 
 
 <!--Kontakt forma -->
-<div class="row pocetna" id="kontakt">
+<div class="row pocetna" id="prijavi_problem">
 	<div class="col-md-12 kontakt">
 	<div class="kontakt_kontent">
 	<h2>Ovdje možete prijaviti problem</h2>
 		<form class="form-horizontal" role="form" id="forma">
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="ime">Ime:</label>
-			    <div class="col-sm-9"> 
+			    
+			    <div class="col-sm-12"> 
 			      <input type="text" class="form-control" id="ime" placeholder="Vaše ime">
 			    </div>
 			  </div>
 
 			 <div class="form-group">
-			    <label class="control-label col-sm-3" for="prezime">Prezime:</label>
-			    <div class="col-sm-9">
+			    
+			    <div class="col-sm-12">
 			      <input type="text" class="form-control" id="prezime" placeholder="Vaše prezime">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="email">E-mail:</label>
-			    <div class="col-sm-9">
+			    
+			    <div class="col-sm-12">
 			      <input type="text" class="form-control" id="email" placeholder="E-mail">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="email">Broj telefona:</label>
-			    <div class="col-sm-9">
+			    
+			    <div class="col-sm-12">
 			      <input type="tel" class="form-control" id="brojtelefona" placeholder="Broj telefona">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="ulica">Ulica:</label>
-			    <div class="col-sm-9"> 
+
+			    <div class="col-sm-12"> 
 			      <select class="form-control" id="ulica">
 					<?php 
 					$ulice = $veza->prepare("select naziv_ulice from ulice order by naziv_ulice");
@@ -90,21 +90,21 @@ NEPOTREBNO
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="kucniBroj">Kućni broj:</label>
-			    <div class="col-sm-9"> 
+			    
+			    <div class="col-sm-12"> 
 			      <input type="text" class="form-control" id="kucniBroj" placeholder="Kućni broj">
 			    </div>
 			  </div>
 
 			  <div class="form-group">
-			    <label class="control-label col-sm-3" for="poruka">Opis problema:</label>
-			    <div class="col-sm-9"> 
+			
+			    <div class="col-sm-12"> 
 			      <textarea type="text" class="form-control" id="opis" placeholder="Opis problema"></textarea>
 			    </div>
 			  </div>
 
 			  <div class="form-group"> 
-			    <div class="col-sm-offset-3 col-sm-9">
+			    <div class="col-sm-12">
 			      <button type="submit" id="send" class="btn btn-default">Pošalji</button>
 			    </div>
 			  </div>
@@ -133,7 +133,7 @@ NEPOTREBNO
 
       function geocodeAddress(geocoder, resultsMap) {
 		  <?php 
-		  $prijave = $veza->prepare("select adresa from prijava order by datum_prijave limit 10");
+		  $prijave = $veza->prepare("select adresa from prijava order by datum_prijave limit 15");
 		  $prijave->execute();
 		  $popisPrijava = $prijave->fetchAll(PDO::FETCH_OBJ);
 		  ?>

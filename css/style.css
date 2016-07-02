@@ -128,7 +128,9 @@ body {
 		padding: 20px;
 		background-color: #4D4D4D;
 	}
-
+	.kontakt form {
+		padding: 0 15px;
+	}
 .kontakt_kontent input,
 .kontakt_kontent textarea {
 	box-sizing: border-box;
@@ -145,7 +147,9 @@ body {
     font-size: 16px;
     height: 45px;
 }
-
+	.kontakt .btn-default {
+		margin-bottom: 10px;
+	}
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
@@ -157,6 +161,20 @@ body {
 		color: #fff;
 }
 
+
+
+.prikazi {
+	margin: 0 auto;
+	display: block;
+	border: none;
+	padding: 15px;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #015249;
+}
 /*------modal------------*/
 .modal {
 	top:40px;
@@ -207,3 +225,26 @@ body {
 			right: 60px;
 			position: absolute;
 		}
+
+
+@media(max-width: 1336px){
+	.header {
+		height: 500px;
+	}
+} 
+
+@media(max-width: 1024px){
+	.header {
+		height: 381px;
+	}
+	.prijavi div {
+		width: 60%;
+		margin: -210px auto 0;
+	}
+}
+
+@media(max-width: 900px) {
+	.header {
+		height: 337px;
+	}
+}
