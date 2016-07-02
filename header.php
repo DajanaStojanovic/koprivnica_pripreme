@@ -24,7 +24,7 @@ session_start();?>
   <button data-toggle="modal" data-target="#myModal"><img src="images/login.png" alt="Login" /> </button>
 </div>
 <?php else:?>
-	<a href="odjava.php"><button class="prijava_button"> Odjava </button> </a>
+	<a href="odjava.php"><button class="odjava_button"> Odjava </button> </a>
 <?php endif;?>
 
 <nav class="navbar navbar-default">
